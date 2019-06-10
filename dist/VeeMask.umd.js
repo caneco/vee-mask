@@ -681,7 +681,7 @@ function solver(value) {
   };
 }
 
-var directive_bind = function bind(el, binding) {
+/* harmony default export */ var directive = (function (el, binding) {
   if (el.tagName.toUpperCase() !== 'INPUT') {
     throw new Error("v-mask directive requires an input element, found: '".concat(el.tagName, "'"));
   }
@@ -699,7 +699,7 @@ var directive_bind = function bind(el, binding) {
     el.dispatchEvent(directive_event('input'));
   }
 
-  el.addEventListener('input', function (ev) {
+  el.oninput = function (ev) {
     if (!ev.isTrusted) return; // avoid infinite loop (?)
 
     var posit = el.selectionEnd;
@@ -718,18 +718,8 @@ var directive_bind = function bind(el, binding) {
     }
 
     el.dispatchEvent(directive_event('input'));
-  });
-};
-
-var unbind = function unbind(el) {
-  el.removeEventListener('input');
-};
-
-var dir = {
-  bind: directive_bind,
-  unbind: unbind
-};
-/* harmony default export */ var directive = (dir);
+  };
+});
 // CONCATENATED MODULE: ./src/index.js
 
 

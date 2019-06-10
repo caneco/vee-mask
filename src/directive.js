@@ -29,7 +29,7 @@ function solver (value) {
   }
 }
 
-const bind = function (el, binding) {
+export default function (el, binding) {
   if (el.tagName.toUpperCase() !== 'INPUT') {
     throw new Error(`v-mask directive requires an input element, found: '${el.tagName}'`)
   }
@@ -47,7 +47,7 @@ const bind = function (el, binding) {
     el.dispatchEvent(event('input'))
   }
 
-  el.addEventListener('input', function (ev) {
+  el.oninput = function (ev) {
     if (!ev.isTrusted) return // avoid infinite loop (?)
 
     let posit = el.selectionEnd
@@ -64,16 +64,5 @@ const bind = function (el, binding) {
     }
 
     el.dispatchEvent(event('input'))
-  })
+  }
 }
-
-const unbind = function (el) {
-  el.removeEventListener('input')
-}
-
-const dir = {
-  bind,
-  unbind,
-}
-
-export default dir
