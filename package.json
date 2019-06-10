@@ -1,0 +1,15 @@
+{
+  "name": "vee-mask",
+  "version": "0.1.0",
+  "description": "Tiny and dependency free mask input for VueJS",
+  "main": "dist/vee-mask.js",
+  "scripts": {
+    "build": "vue build --target lib --name VeeMask ./src/index.js && cp dist/VeeMask.umdp.js dist/vee-mask.js"
+  },
+  "keywords": [],
+  "author": "Caneco <vitor.caneco@gmail.com> (http://caneco.xyz",
+  "contributors": [
+    "Marcos Neves <marcos.neves@gmail.com> (https://vuejs-tips.github.io/)"
+  ],
+  "license": "MIT"
+}
