@@ -1,6 +1,17 @@
+<p align="center">
+  <a href="https://github.com/caneco/vee-mask" target="_blank">
+    <!-- <img width="200" src="…"> -->
+  </a>
+</p>
+
 # Vee Mask
 
-Tiny and dependency free mask input for VueJS
+**vee-mask** is a tiny and dependency free mask input for Vue.js that allows you to easily mask your input fields based on tokens.
+
+#### NOTICE
+
+I've created this package from a fork of [vue-the-mask](https://github.com/vuejs-tips/vue-the-mask) due to [lack of maintenance](https://github.com/vuejs-tips/vue-the-mask/issues/90); the need of some [extra features](https://github.com/vuejs-tips/vue-the-mask/pull/106); and [code fixes](https://github.com/vuejs-tips/vue-the-mask/pull/64) well discussed in the original repository.
+Feel free to use it, but props to the original algorithms from @neves 🙌
 
 ## Install
 
@@ -44,7 +55,13 @@ export default {
 
 ## Properties
 
-TBD
+| Property    | Required | Type                    | Default | Description                                |
+|-------------|----------|-------------------------|---------|--------------------------------------------|
+| value       | false    | String                  |         | Input value or v-model                     |
+| mask        | **true** | String, Array           |         | Mask pattern                               |
+| masked      | false    | Boolean                 | false   | emit value with mask chars, default is raw |
+| tokens      | false    | Object                  | [tokens](#tokens) | Custom tokens for mask           |
+
 
 ## License
 
