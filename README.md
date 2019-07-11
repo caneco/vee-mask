@@ -1,17 +1,26 @@
 <p align="center">
+
   <a href="https://github.com/caneco/vee-mask" target="_blank">
-    <!-- <img width="200" src="…"> -->
+    <img width="256" src="https://raw.githubusercontent.com/caneco/vee-mask/master/art/logo.png">
   </a>
+
 </p>
 
 # Vee Mask
+
+<p align="center">
+
+[![npm](https://img.shields.io/npm/dm/vee-mask.svg)](https://npm-stat.com/charts.html?package=vee-mask)
+[![npm](https://img.shields.io/npm/v/vee-mask.svg)](https://www.npmjs.com/package/vee-mask)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/caneco/vee-mask/graphs/commit-activity)
+
+</p>
 
 **vee-mask** is a tiny and dependency free mask input for Vue.js that allows you to easily mask your input fields based on tokens.
 
 #### NOTICE
 
-I've created this package from a fork of [vue-the-mask](https://github.com/vuejs-tips/vue-the-mask) due to [lack of maintenance](https://github.com/vuejs-tips/vue-the-mask/issues/90); the need of some [extra features](https://github.com/vuejs-tips/vue-the-mask/pull/106); and [code fixes](https://github.com/vuejs-tips/vue-the-mask/pull/64) well discussed in the original repository.
-Feel free to use it, but props to the original algorithms from @neves 🙌
+I've created this package from a fork of [vue-the-mask](https://github.com/vuejs-tips/vue-the-mask) due to [lack of maintenance](https://github.com/vuejs-tips/vue-the-mask/issues/90); the need of some [extra features](https://github.com/vuejs-tips/vue-the-mask/pull/106); and [code fixes](https://github.com/vuejs-tips/vue-the-mask/pull/64) well discussed in the original repository. But still, props to the original algorithms from [@neves](https://github.com/neves) 🙌
 
 ## Install
 
