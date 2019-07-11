@@ -1,3 +1,7 @@
+/**
+ * Original code from `vue-the-mask`
+ * https://github.com/vuejs-tips/vue-the-mask/blob/master/src/maskit.js
+ */
 export default function (value = '', mask = '', masked = true, tokens = {}) {
   let i = 0, j = 0
   var output = '', restOutput = ''

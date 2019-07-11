@@ -1,3 +1,7 @@
+/**
+ * Original code from `vue-the-mask`
+ * https://github.com/vuejs-tips/vue-the-mask/blob/master/src/dynamic-mask.js
+ */
 export default function (maskit, masks, tokens) {
   masks = masks.slice().sort((a, b) => a.length - b.length)
 
